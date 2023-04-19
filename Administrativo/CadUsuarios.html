@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h3>Cadastrar novo Usuário</h3>
+    <form method="POST" action="cadastro.php">
+        <label>Nome:</label> 
+        <input type="text" name="txtNome" class="form-control" maxlength="70"><br>
+        <br>
+
+        <label>E-mail:</label>
+        <input type="email" name="txtemail" class="form-control" maxlength="50" aria-describedby="emailHelp"><br>
+        <br>
+
+        <label>Usuário:</label>
+        <input type="text" name="usuário" class="form-control" maxlength="30"><br>
+        <br>
+
+        <label>Senha:</label>
+        <input type="text" name="password" class="form-control" maxlength="16"><br>
+        <br>
+
+        <label>Repita a senha:</label>
+        <input type="text" name="password" class="form-control" maxlength="16"><br>
+        <br>
+        <select name="selNivel" class="form-control">
+            <option value="1">1 - Setor Administrativo</option>
+            <option value="2">2 - Setor Médico</option>
+        </select><br>
+
+        <br>
+
+        <button type="submit" name="btSubmitUsuario" class="btn btn-primar w-100">Cadastrar Usuário</button>
+      
+
+        </form>
+</body>
+</html>

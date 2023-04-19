@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <form class="formulario" method="post"> 
+        <h2> CADASTRO DE FUNCIONÁRIOS</h2>
+        
+        <div class="field">
+            <p>DADOS PRINCIPAIS</p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+        <br> 
+        <div class="field">
+            <label for="data de nascimento">Data de Nascimento:</label>
+            <input type="text" id="data de nascimento" name="data de nascimento" placeholder="Digite data do nascimento">
+        </div>
+        <br>
+        <div class="field radiobox">
+            <span>Sexo</span>
+            <input type="radio" name="Feminino" id="feminino" value="feminino" checked><label for="feminino">Feminino</label>
+            <input type="radio" name="masculino" id="masculino" value="masculino"><label for="masculino">Masculino</label>
+         </div>
+        <br> 
+        <div class="field">
+            <label for="RG">RG:</label>
+            <input type="text" id="RG" name="RG" placeholder="Digite seu RG">
+            <label for="orgão emissor">Orgão emissor:</label>
+            <input type="text" id="orgão emissor" name="orgão emissor" placeholder="Digite seu orgão emissor">
+            <label for="UF">UF:</label>
+            <input type="text" id="UF" name="UF" placeholder="Digite o UF">
+        </div>
+        <br>
+        <div class="field">
+            <label for="CPF">CPF:</label>
+            <input type="text" id="CPF" name="CPF" placeholder="Digite seu CPF">
+        </div>
+        <br>
+        <div class="field">
+            <label for="CTPS">CTPS:</label>
+            <input type="text" id="CTPS" name="CTPS" placeholder="Digite seu CTPS">
+        </div>
+        <br>
+        <div class="field">
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+        </div>
+         <br>       
+        <div class="field">
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="celular" placeholder="Digite seu celular">
+        </div>
+        <br>       
+        <div class="field">
+            <p>DADOS PARA CONTATO</p>
+            <label for="rua">Rua:</label> 
+            <input type="text" id="rua" name="rua" placeholder="Digite a rua">
+            <label for="número">Número:</label>
+            <input type="text" id="numero" name="número" placeholder="Digite o número">
+        </div>
+        <br>  
+        <div class="field">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro">
+        </div>
+        <br>  
+        <div class="field">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+        </div>
+        <br>  
+        <div class="field">
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" placeholder="Obs (máx. 60 caracteres)">
+        </div>
+        <div class="field">
+            <p>INFORME SEU NÚMERO DE IDENTIFICAÇÃO SOCIAL</p>
+            <label for="pis">PIS:</label>
+            <input type="text" id="pis" name="pis" placeholder="Digite seu PIS">
+        </div>
+        <br>  
+
+        <input type="submit" name="acao" value="Cadastrar">
+    </form>
+</body>
+</html>
