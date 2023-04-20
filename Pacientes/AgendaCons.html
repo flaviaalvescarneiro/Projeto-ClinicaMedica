@@ -13,52 +13,50 @@
         <div class="page">
             <h1> MARCAR CONSULTA</h1>
             <div class="dadosPrincipais">
+                <h2>QUERO AGENDAR UM HORÁRIO:</h2>
                 <div class="field-formulario">
-                    <h2>QUERO AGENDAR UM HORÁRIO:</h2>
-                    <br>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
                 </div>
-                <br>
+                
                 <div class="field-formulario radiobox">
                     <span>Convênio</span>
-                    <input type="checkbox" name="AMIL" id="AMIL" value="AMIL" checked><label for="AMIL">AMIL</label>
-                    <input type="checkbox" name="PARTICULAR" id="PARTICULAR" value="PARTICULAR"><label for="PARTICULAR">PARTICULAR</label>
-                    <input type="checkbox" name="UNIMED" id="UNIMED" value="UNIMED" checked><label for="UNIMED">UNIMED</label>
-                    <input type="checkbox" name="OUTROCONVENIO" id="OUTROCONVENIO" value="OUTROCONVENIO" checked><label for="OUTROCONVENIO">OUTRO CONVÊNIO</label>
+                    <input type="radio" name="AMIL" id="AMIL" value="AMIL" checked><label for="AMIL">AMIL</label>
+                    <input type="radio" name="PARTICULAR" id="PARTICULAR" value="PARTICULAR"><label for="PARTICULAR">PARTICULAR</label>
+                    <input type="radio" name="UNIMED" id="UNIMED" value="UNIMED" checked><label for="UNIMED">UNIMED</label>
+                    <input type="radio" name="OUTROCONVENIO" id="OUTROCONVENIO" value="OUTROCONVENIO" checked><label for="OUTROCONVENIO">OUTRO CONVÊNIO</label>
                 </div>
-                <form>
-                    <input type="text" name="Nome" size="40"  placeholder="Digite o convênio"/> 
-                                      
-                    </form>
-                <br>
+                <div class="field-formulario">
+                   <input type="text" name="Nome" size="40"  placeholder="Digite o convênio"/>                 
+                </div>
+                
                 <div class="field-formulario">
                     <label for="medico">Para quem:</label>
                     <input type="text" id="medico" name="medico" placeholder="Digite o médico">
                 </div>
-                <br>
+
                 <div class="field-formulario">
                     <label for="especialidade">Para qual especialidade:</label>
                     <input type="text" id="especialidade" name="especialidade" placeholder="Digite a especialidade">
                 </div>
-                <br>
+                
                 <div class="field-formulario">
                     <label for="Atendente">Atendente:</label>
                     <input type="text" id="Atendente" name="Atendente" placeholder="Digite o nome do atendente">
                 </div>
-                <br>
+               
                 <div class="field-formulario">
                     <label for="data">Data:</label>
-                    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                    <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-                    <input type="text" name="ano" size="4" maxlength="4" value="aaaa"> <br>
+                    <input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
+                    <input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+                    <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa"> <br>
                     <label for="Hora">Hora:</label>
                     <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
                                         
                 </div>
 
             </div>
-            <br>
+            
             <button type="submit" name="buttonCadastroFuncionario" class="buttonCadastrar">Agendar</button>
         </div>
     </form>
