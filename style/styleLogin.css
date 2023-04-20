@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 120px;
   color: #054768;
-  background-color: blueviolet;
+  background-color: #5e1dc7;
 }
 
 h1,
@@ -18,7 +18,7 @@ p {
   justify-content: center;
 }
 
-.formLogin {
+.formularioLogin {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -29,18 +29,14 @@ p {
   gap: 5px;
 }
 
-.areaLogin img {
-  width: 420px;
-}
-
-.formLogin h1 {
+.formularioLogin h1 {
   font-weight: 500;
   font-size: 2.3em;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.formLogin input {
+.formularioLogin input {
   padding: 15px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -52,16 +48,16 @@ p {
   outline: none;
 }
 
-.formLogin input:focus {
+.formularioLogin input:focus {
   border: 1px solid orangered;
 }
 
-.formLogin label {
+.formularioLogin label {
   font-size: 14px;
   font-weight: 600;
 }
 
-.formLogin a {
+.formularioLogin a {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 13px;
@@ -69,7 +65,7 @@ p {
   transition: all linear 160ms;
 }
 
-.formLogin a:hover {
+.formularioLogin a:hover {
   color: #fff;
 }
 
