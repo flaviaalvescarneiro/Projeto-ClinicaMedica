@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro de Usuário</title>
 </head>
+
 <body>
-    <h3>Cadastrar novo Usuário</h3>
+    <h1>Cadastrar novo Usuário</h1>
     <form method="POST" action="cadastro.php">
-        <label>Nome:</label> 
-        <input type="text" name="txtNome" class="form-control" maxlength="70"><br>
+        <div class="field-formulario">
+            <label>Nome:</label>
+            <input type="text" name="txtNome" placeholder="Digito o nome" class="form-control" maxlength="70" required>
+        </div>
         <br>
-
-        <label>E-mail:</label>
-        <input type="email" name="txtemail" class="form-control" maxlength="50" aria-describedby="emailHelp"><br>
+        <div class="field-formulario">
+            <label>E-mail:</label>
+            <input type="email" name="txtemail" placeholder="Digite o email" class="form-control" maxlength="50" aria-describedby="emailHelp">
+        </div>
         <br>
-
-        <label>Usuário:</label>
-        <input type="text" name="usuário" class="form-control" maxlength="30"><br>
+        <div class="field-formulario">
+            <label>Usuário:</label>
+            <input type="text" name="usuário" placeholder="Digite o Usuário" class="form-control" maxlength="30" required>
+        </div>
         <br>
-
-        <label>Senha:</label>
-        <input type="text" name="password" class="form-control" maxlength="16"><br>
+        <div class="field-formulario">
+            <label>Senha:</label>
+            <input type="text" name="password" placeholder="Digite uma senha" class="form-control" maxlength="16">
+        </div>
         <br>
-
-        <label>Repita a senha:</label>
-        <input type="text" name="password" class="form-control" maxlength="16"><br>
+        <div class="field-formulario">
+            <label>Repita a senha:</label>
+            <input type="text" name="password" placeholder="Repita a senha" class="form-control" maxlength="16">
+        </div>
         <br>
-        <select name="selNivel" class="form-control">
-            <option value="1">1 - Setor Administrativo</option>
-            <option value="2">2 - Setor Médico</option>
-        </select><br>
-
+        <select name="selecaoNivel" class="form-control">
+            <option value="1">1 - Administrador</option>
+            <option value="2">2 - Atendente</option>
+            <option value="2">3 - Médico</option>
+            <option value="3">3 - Pacientes</option>
+        </select>
         <br>
-
-        <button type="submit" name="btSubmitUsuario" class="btn btn-primar w-100">Cadastrar Usuário</button>
-      
-
-        </form>
+        <button type="submit" name="buttonCadastroUsuario" class="buttonCadastrar">Cadastrar Usuário</button>
+    </form>
 </body>
+
 </html>

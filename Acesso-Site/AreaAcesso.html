@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso</title>
-    <link rel="stylesheet" href="main.css">
-    <h3> Acesse para entrar</h3>
+    <link rel="stylesheet" href="../style/styleAreaAcesso.css">
+    <title>Bem Vindo!</title>
+
 </head>
+
 <body>
-<div class="page">
-    <table>
-        <tr>
-        <td>
-            <div>
-                <a class="button" href="(LINK)" style="float: right; border:1px solid; padding: 11px 21px; 
-                vertical-align: middle; background:#342d8f; color:white;border-radius:6px; font-size: 
-                20px; font-family:helvetica, serif;text-decoration:none;">Recepção</a>
-            </div>
-        </td>
-        <td>
-            <div>
-                <a class="button" href="(LINK)" style="float: center; border:1px solid; padding: 11px 21px; 
-                vertical-align: middle; background:#1b94b9; color:white;border-radius:6px; font-size: 
-                20px; font-family:helvetica, serif;text-decoration:none;">Área Médica</a>
-            </div>
-        </td> 
-        <td>
-            <div>
-                <a class="button" href="(LINK)" style="float: center; border:1px solid; padding: 11px 21px; 
-                vertical-align: middle; background:#721bb9; color:white;border-radius:6px; font-size: 
-                20px; font-family:helvetica, serif;text-decoration:none;">Paciente</a>
-            </div>
-        </td>            
-        </tr>
-    </table>
-</div>
+    <nav class="areaDeAcesso">
+        <h1>Selecione para entrar</h1>
+        <ul class="opcoes-areaDeAcesso">
+            <li><a type="button" class="buttonAreaAdministrativo" href="../Administrativo/telaPrincipal.html"> Administrativo</a></li>
+            <li><a type="button" class="buttonAreaAtendimento" href="../atendimento/telaPrincipal.html"> Atendimento</a></li>
+            <li><a type="button" class="buttonAreaPacientes" href="../pacientes/telaPrincipal.html"> Pacientes</a></li>
+        </ul>
+      
+    </nav>
 </body>
+
 </html>
