@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/styleFormulario.css">
+  <title>Cadastro de Especialidade</title>
+</head>
+
+<body>
+  <form class="formulario" method="POST" action="cadastro.php">
+    <div class="page">
+      <h1>Cadastrar nova Especialidade</h1>
+      <div class="field-formulario">
+        <label>Codigo:</label>
+        <input type="text" name="txtCodigoEspecialidade" placeholder="Digite o Codigo" class="form-control" maxlength="70" required>
+      </div>
+
+      <div class="field-formulario">
+        <label>Especialidade:</label>
+        <input type="text" name="txtEspecialidade" placeholder="Digito a Especialidade" class="form-control" maxlength="70" required>
+      </div>
+
+      <button type="submit" name="buttonCadastroEspecialidade" class="buttonCadastrar">Cadastrar Especialidade</button>
+    </div>
+  </form>
+</body>
+
+</html>

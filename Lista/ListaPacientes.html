@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/styleList.css">
+  <title> Lista de Pacientes</title>
+</head>
+
+<body>
+  <form class="formulario" method="POST" action="cadastro.php">
+    <div class="page">
+      <h1> lista de pacientes</h1>
+      <div class="field-formulario">
+        <label for="busca">Buscar</label>
+        <input type="search" id="busca" name="q">
+        <button type="submit">OK</button>
+      </div>
+
+      <table class="pacientes-tabela" border="1">
+        <div class="field-formulario">
+          <thead>
+            <tr>
+              <th>Nº Registro</th>
+              <th>Nome</th>
+              <th>Data de Nascimento</th>
+              <th>Sexo</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+
+          <tr>
+            <td>06474</td>
+            <td>Maria Aparecida da Silva</td>
+            <td>05/04/1990</td>
+            <td>F</td>
+            <td nowrap>
+              <button class="editar">Editar</button>
+              <button class="apagar" onclick="removerElemento(event.target)">Apagar</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>00933</td>
+            <td>Carlos Renato Moreira</td>
+            <td>10/07/1989</td>
+            <td>M</td>
+            <td nowrap>
+              <button class="editar">Editar</button>
+              <button class="apagar" onclick="removerElemento(event.target)">Apagar</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2738</td>
+            <td>Carla de Castro</td>
+            <td>24/03/2010</td>
+            <td>F</td>
+            <td nowrap>
+              <button class="editar">Editar</button>
+              <button class="apagar" onclick="removerElemento(event.target)">Apagar</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>8494</td>
+            <td>João Roberto Pereira Lima</td>
+            <td>01/02/1982</td>
+            <td>M</td>
+            <td nowrap>
+              <button class="editar">Editar</button>
+              <button class="apagar" onclick="removerElemento(event.target)">Apagar</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>48499</td>
+            <td>Cristina Paula Araujo</td>
+            <td>09/12/1968</td>
+            <td>F</td>
+            <td nowrap>
+              <button class="editar">Editar</button>
+              <button class="apagar" onclick="removerElemento(event.target)">Apagar</button>
+            </td>
+          </tr>
+          </tbody>
+        </div>
+      </table>
+
+      <div class="field-formulario">
+        <h3> DESCRIÇÃO</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>DADOS DO PACIENTE</th>
+              <th>AVALIAÇÕES</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr 1>
+              <td label for="nome">Registro:</label>
+                <br>
+                <input type="text" id="registro" name="Registro" placeholder="Registro" required>
+              </td>
+              <th> Patologias</th>
+              <th> Data de entrada</th>
+              <th> Data da saída</th>
+            </tr>
+            <tr 2>
+              <td label for="nome">Nome: </label>
+                <br>
+                <input type="text" id="nome" name="nome" placeholder="Paciente" required>
+              </td>
+              <td>Dosagem de glicose</td>
+              <td>04/09/2022</td>
+              <td> 09/09/2022</td>
+              <td nowrap>
+                <button class="editar">Abrir</button>
+              </td>
+            </tr>
+            <tr 3>
+              <td label for="nome">Data de nascimento:</label>
+                <br>
+                <input type="text" id="datanasc" name="datanasc" placeholder="Data de nascimento" required>
+              </td>
+              <td>Perfil Lipídico (Colesterol Total e frações e Triglicerídeos)</td>
+              <td>10/09/2022</td>
+              <td> 14/09/2022</td>
+              <td nowrap>
+                <button class="editar">Abrir</button>
+              </td>
+            </tr>
+            <tr 4>
+              <td label for="nome">Sexo:</label>
+                <br>
+                <input type="text" id="sexo" name="sexo" placeholder="Sexo" required>
+              </td>
+              <td> Função Renal (Ureia, Creatinina e Ácido Úrico)</td>
+              <td>10/09/2022</td>
+              <td>14/09/2022</td>
+              <td nowrap>
+                <button class="editar">Abrir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit" name="buttonCadastroMedico" class="buttonCadastrar">Atualizar</button>
+      </div>
+  </form>
+</body>
+
+</html>

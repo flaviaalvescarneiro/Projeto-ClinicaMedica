@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/styleFormulario.css">
-    <title>Cadastrar Funcionários</title>
+    <title>Atualizar Paciente</title>
 </head>
 
 <body>
     <form class="formulario" method="post">
         <div class="page">
-            <h1> CADASTRO DE FUNCIONÁRIOS</h1>
+            <h1> Atualizar PACIENTE</h1>
             <div class="dadosPrincipais">
                 <h2>DADOS PRINCIPAIS</h2>
                 <div class="field-formulario">
@@ -20,8 +20,10 @@
                 </div>
 
                 <div class="field-formulario">
-                    <label for="data de nascimento">Data de Nascimento:</label>
-                    <input type="text" id="data de nascimento" name="data de nascimento" placeholder="00/00/0000">
+                    <label for="data">Data de nascimento:</label>
+                    <input type="text" name="dia" size="2" maxlength="2" placeholder="dd">
+                    <input type="text" name="mes" size="2" maxlength="2" placeholder="mm">
+                    <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa"> <br>
                 </div>
 
                 <div class="field-formulario radiobox">
@@ -42,16 +44,6 @@
                 <div class="field-formulario">
                     <label for="CPF">CPF:</label>
                     <input type="text" id="CPF" name="CPF" placeholder="Digite o n° do CPF">
-                </div>
-
-                <div class="field-formulario">
-                    <label for="CTPS">CTPS:</label>
-                    <input type="text" id="CTPS" name="CTPS" placeholder="Digite o n° da CTPS">
-                </div>
-
-                <div class="field-formulario">
-                    <label for="pis">PIS:</label>
-                    <input type="text" id="pis" name="pis" placeholder="Digite seu PIS">
                 </div>
 
             </div>
@@ -93,6 +85,16 @@
                 </div>
 
             </div>
+            <div class="field-formulario radiobox">
+                <span>Convênio:</span>
+                <input type="radio" name="AMIL" id="AMIL" value="AMIL"><label for="AMIL">AMIL</label>
+                <input type="radio" name="PARTICULAR" id="PARTICULAR" value="PARTICULAR"><label for="PARTICULAR">PARTICULAR</label>
+                <input type="radio" name="UNIMED" id="UNIMED" value="UNIMED"><label for="UNIMED">UNIMED</label>
+                <input type="radio" name="OUTROCONVENIO" id="OUTROCONVENIO" value="OUTROCONVENIO"><label for="OUTROCONVENIO">OUTRO CONVÊNIO</label>
+            </div>
+            <form>
+                <input type="text" name="Nome" size="40" placeholder="Digite o convênio" />
+            </form><br>
             <button type="submit" name="buttonCadastroFuncionario" class="buttonCadastrar">Cadastrar</button>
         </div>
     </form>

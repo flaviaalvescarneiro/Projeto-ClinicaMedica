@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styleFormulario.css">
+    <title>Agenda</title>
+</head>
+
+<body>
+    <form class="formulario" method="post">
+        <div class="page">
+            <h1> MARCAR CONSULTA</h1>
+            <div class="dadosPrincipais">
+                <h2>QUERO AGENDAR UM HORÁRIO:</h2>
+                <div class="field-formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+                </div>
+
+                <div class="field-formulario radiobox">
+                    <span>Convênio</span>
+                    <input type="radio" name="AMIL" id="AMIL" value="AMIL"><label for="AMIL">AMIL</label>
+                    <input type="radio" name="PARTICULAR" id="PARTICULAR" value="PARTICULAR"><label for="PARTICULAR">PARTICULAR</label>
+                    <input type="radio" name="UNIMED" id="UNIMED" value="UNIMED"><label for="UNIMED">UNIMED</label>
+                    <input type="radio" name="OUTROCONVENIO" id="OUTROCONVENIO" value="OUTROCONVENIO"><label for="OUTROCONVENIO">OUTRO CONVÊNIO</label>
+                </div>
+                <div class="field-formulario">
+                    <input type="text" name="Nome" size="40" placeholder="Digite o convênio" />
+                </div>
+
+                <div class="field-formulario">
+                    <label for="medico">Medico:</label>
+                    <input type="text" id="medico" name="medico" placeholder="Digite o médico">
+                </div>
+
+                <div class="field-formulario">
+                    <label for="especialidade">Qual especialidade:</label>
+                    <input type="search" id="especialidade" name="especialidade" placeholder="Digite a especialidade">
+                </div>
+
+                <div class="field-formulario">
+                    <label for="Atendente">Atendente:</label>
+                    <input type="text" id="Atendente" name="Atendente" placeholder="Digite o nome do atendente">
+                </div>
+
+                <div class="field-formulario">
+                    <label for="data">Data:</label>
+                    <input type="text" name="dia" size="2" maxlength="2" placeholder="dd">
+                    <input type="text" name="mes" size="2" maxlength="2" placeholder="mm">
+                    <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+                    <label for="Hora">Hora:</label>
+                    <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                </div>
+            </div>
+
+            <button type="submit" name="buttonCadastroFuncionario" class="buttonCadastrar">Agendar</button>
+        </div>
+    </form>
+</body>
+
+</html>
