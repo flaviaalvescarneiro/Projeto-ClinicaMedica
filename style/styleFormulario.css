@@ -15,7 +15,6 @@ p {
 }
 
 .formulario {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   place-content: center;
@@ -82,7 +81,6 @@ span {
 }
 
 .page {
-  border: 1px solid yellowgreen;
 
   display: grid;
   place-content: center;
