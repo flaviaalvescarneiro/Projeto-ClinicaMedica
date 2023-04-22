@@ -4,12 +4,11 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #5e1dc7;
-  /* max-width: 100%; */
+  display: grid;
 }
 
 .funcionalidades {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -17,6 +16,7 @@ body {
 .funcionalidades ul {
   list-style: none;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   gap: 20px;
 }
@@ -27,6 +27,6 @@ body {
   text-align: center;
   border-radius: 4px;
   padding: 1rem 2rem;
-  background-color: blueviolet;
-  color: aliceblue;
+  background-color: #fff;
+  color: #054768;
 }
