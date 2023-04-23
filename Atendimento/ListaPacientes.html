@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/styleList.css">
+  <title> Lista de Pacientes</title>
+</head>
+
+<body>
+
+  <div class="conteudo">
+
+    <h1> lista de pacientes</h1>
+    <div class="pesquisa">
+      <label for="busca">Buscar</label>
+      <input type="search" id="busca" name="">
+      <button class="botaoprincipal" type="submit">OK</button>
+    </div>
+
+    <table class="pacientes-tabela" border="1">
+
+      <thead>
+        <tr>
+          <th>Nº Registro</th>
+          <th>Nome</th>
+          <th>Data de Nascimento</th>
+          <th>Sexo</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="item-tabela">
+          <td>06474</td>
+          <td>Maria Aparecida da Silva</td>
+          <td>05/04/1990</td>
+          <td>F</td>
+          <td nowrap>
+            <button class="botaoeditar">Editar</button>
+            <button class="botaoapagar" onclick="removerElemento(event.target)">Apagar</button>
+          </td>
+        </tr>
+
+        <tr class="item-tabela">
+          <td>00933</td>
+          <td>Carlos Renato Moreira</td>
+          <td>10/07/1989</td>
+          <td>M</td>
+          <td nowrap>
+            <button class="botaoeditar">Editar</button>
+            <button class="botaoapagar" onclick="removerElemento(event.target)">Apagar</button>
+          </td>
+        </tr>
+
+        <tr class="item-tabela">
+          <td>2738</td>
+          <td>Carla de Castro</td>
+          <td>24/03/2010</td>
+          <td>F</td>
+          <td nowrap>
+            <button class="botaoeditar">Editar</button>
+            <button class="botaoapagar" onclick="removerElemento(event.target)">Apagar</button>
+          </td>
+        </tr>
+
+        <tr class="item-tabela">
+          <td>8494</td>
+          <td>João Roberto Pereira Lima</td>
+          <td>01/02/1982</td>
+          <td>M</td>
+          <td nowrap>
+            <button class="botaoeditar">Editar</button>
+            <button class="botaoapagar" onclick="removerElemento(event.target)">Apagar</button>
+          </td>
+        </tr>
+
+        <tr class="item-tabela">
+          <td>48499</td>
+          <td>Cristina Paula Araujo</td>
+          <td>09/12/1968</td>
+          <td>F</td>
+          <td nowrap>
+            <button class="botaoeditar">Editar</button>
+            <button class="botaoapagar" onclick="removerElemento(event.target)">Apagar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>DADOS DO PACIENTE</h2>
+    <div class="dadospaciente">
+      <label for=" nome">Registro:</label>
+      <input type="text" id="registro" name="Registro" placeholder="Registro" required>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" name="nome" placeholder="Paciente" required>
+      <label for="nome">Data de nascimento:</label>
+      <input type="text" id="datanasc" name="datanasc" placeholder="Data de nascimento" required>
+    </div>
+
+
+    <h3> DESCRIÇÃO</h3>
+    <table class="pacientes-tabela">
+      <tbody>
+        <tr 1 class="item-tabela">
+          <th> Patologias</th>
+          <th> Data de entrada</th>
+          <th> Data da saída</th>
+        </tr>
+        <tr 2 class="item-tabela">
+          <td>Dosagem de glicose</td>
+          <td>04/09/2022</td>
+          <td> 09/09/2022</td>
+          <td nowrap>
+            <button class="botaoabrir">Abrir</button>
+          </td>
+        </tr>
+        <tr 3 class="item-tabela">
+          <td>Perfil Lipídico (Colesterol Total e frações e Triglicerídeos)</td>
+          <td>10/09/2022</td>
+          <td> 14/09/2022</td>
+          <td nowrap>
+            <button class="botaoabrir">Abrir</button>
+          </td>
+        </tr>
+        <tr 4 class="item-tabela">
+          <td> Função Renal (Ureia, Creatinina e Ácido Úrico)</td>
+          <td>10/09/2022</td>
+          <td>14/09/2022</td>
+          <td nowrap>
+            <button class="botaoabrir">Abrir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="submit" name="botaoAtualizar" class="botaoprincipal">Atualizar</button>
+  </div>
+</body>
+
+</html>
